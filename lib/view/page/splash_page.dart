@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:plant_app_flutter/view/resources/color.dart';
 import 'package:plant_app_flutter/view/widgets/bottom_nav.dart';
 
@@ -11,21 +12,22 @@ class SplashPage extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          const SizedBox(height: 25),
+          SizedBox(height: 25.h),
           const Text(
             'Let\'s plant with us',
             style: TextStyle(
-              fontSize: 22.0,
+              fontSize: 22,
+              color: green,
               letterSpacing: 1.8,
               fontWeight: FontWeight.w900,
             ),
           ),
-          const SizedBox(height: 5),
-          const Text(
+          SizedBox(height: 5.h),
+          Text(
             'Bring nature home',
             style: TextStyle(
               color: grey,
-              fontSize: 16,
+              fontSize: 16.sp,
               letterSpacing: 1.8,
               fontWeight: FontWeight.w600,
             ),
@@ -35,7 +37,7 @@ class SplashPage extends StatelessWidget {
             width: 450,
             child: Image.asset('assets/images/Asset1.png'),
           ),
-          const SizedBox(height: 25),
+          SizedBox(height: 25.h),
           GestureDetector(
             onTap: () {
               Navigator.push(
@@ -54,11 +56,11 @@ class SplashPage extends StatelessWidget {
                 color: green,
                 borderRadius: BorderRadius.circular(10.0),
               ),
-              child: const Text(
+              child: Text(
                 'Sign In',
                 style: TextStyle(
                   color: white,
-                  fontSize: 16,
+                  fontSize: 16.sp,
                   fontWeight: FontWeight.w600,
                 ),
               ),
@@ -70,7 +72,7 @@ class SplashPage extends StatelessWidget {
               'Create an account',
               style: TextStyle(
                 color: black.withOpacity(0.7),
-                fontSize: 16,
+                fontSize: 16.sp,
                 letterSpacing: 1,
                 fontWeight: FontWeight.w600,
               ),

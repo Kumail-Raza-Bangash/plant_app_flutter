@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:plant_app_flutter/view/resources/color.dart';
 import 'package:plant_app_flutter/data/bottom_menu.dart';
 import 'package:plant_app_flutter/view/page/home_page.dart';
 
 class BottomNavBar extends StatefulWidget {
-  const BottomNavBar({Key? key}) : super(key: key);
+  const BottomNavBar({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _BottomNavBarState createState() => _BottomNavBarState();
 }
 
@@ -29,23 +31,25 @@ class _BottomNavBarState extends State<BottomNavBar> {
       bottomNavigationBar: BottomAppBar(
         elevation: 0,
         child: SizedBox(
-          height: 60.0,
+          height: 60.h,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               for (int i = 0; bottomMenu.length > i; i++)
                 GestureDetector(
                   onTap: () {
-                    setState(() {
-                      pageController.jumpToPage(i);
-                      selectIndex = i;
-                    });
+                    setState(
+                      () {
+                        pageController.jumpToPage(i);
+                        selectIndex = i;
+                      },
+                    );
                   },
                   child: Image.asset(
                     bottomMenu[i].imagePath,
                     color: selectIndex == i ? green : grey.withOpacity(0.5),
                   ),
-                )
+                ),
             ],
           ),
         ),

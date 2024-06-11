@@ -4,7 +4,10 @@ import 'package:plant_app_flutter/data/plant_model.dart';
 
 class DetailsPage extends StatelessWidget {
   final Plants plant;
-  const DetailsPage({Key? key, required this.plant}) : super(key: key);
+  const DetailsPage({
+    super.key,
+    required this.plant,
+  });
 
   @override
   Widget build(BuildContext context) {
