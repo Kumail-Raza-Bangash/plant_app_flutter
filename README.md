@@ -2,15 +2,7 @@
 
 A new Flutter project.
 
-## Getting Started
+## Video 
 
-This project is a starting point for a Flutter application.
+https://github.com/Kumail-Raza-Bangash/plant_app_flutter_ui/assets/60749099/620d7106-bef6-4411-8a31-fd6af09ab8c8
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
