@@ -127,6 +127,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+            SizedBox(height: 20.h),
             SizedBox(
               height: 35.h,
               child: Row(
@@ -160,6 +161,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+            SizedBox(height: 05.h),
             SizedBox(
               height: 320.h,
               child: PageView.builder(
@@ -175,6 +177,7 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
             ),
+            SizedBox(height: 30.h),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.h),
               child: Row(
@@ -196,8 +199,9 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+            SizedBox(height: 20.h),
             SizedBox(
-              height: 130.h,
+              height: 120.h,
               child: ListView.builder(
                 itemCount: populerPlants.length,
                 physics: const BouncingScrollPhysics(),
